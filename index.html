@@ -13,7 +13,9 @@
     <nav>
         <!-- logo -->
         <div class="nav-left">
-            <img src="img/logo-small.png" alt="dropbox-logo">
+            <a href="#">
+                <img src="img/logo-small.png" alt="dropbox-logo">
+            </a>
             <ul>
                 <li>
                     <a href="#">Perchè Dropbox</a>
@@ -47,17 +49,24 @@
             <h1>
                 Tutto ciò che ti serve per il lavoro, in un unico posto
             </h1>
-            <div class="header-jumbo">
+            <div class="jumbo-container">
                 <div class="text-jumbo col-30">
-                    <p>
-                        Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.
-                    </p>
-                    <button class="btn-blue">
-                        Inizia la tua prova gratuita
-                    </button>
-                    <p>
-                        Annulla in qualsiasi momento
-                    </p>
+                    <div class="jumbo-text-up">
+                        <p>
+                            Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.
+                        </p>
+                        <button class="btn-blue">
+                            Inizia la tua prova gratuita
+                        </button>
+                        <p>
+                            Annulla in qualsiasi momento
+                        </p>
+                    </div>
+                    <div class="jumbo-text-down">
+                        <h2>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </h2>
+                    </div>
                 </div>
                 <div class="img-jumbo col-70">
                     <img src="img/jumbo.png" alt="jumbo">
@@ -122,24 +131,24 @@
                 </div>
                 <div class="plan-card col-30">
                     <div class="plan-user">
-                        <i class="fa-solid fa-user"></i>
-                        <span>Singolo</span>
+                        <i class="fa-solid fa-users"></i>
+                        <span>Team</span>
                     </div>
                     <div class="card-body">
                         <div class="plan-price">
-                            <h3>Professional</h3>
-                            <h5>&euro; 12.00</h5>
-                            <p>/mese</p>
+                            <h3>Advanced</h3>
+                            <h5>&euro; 18.00</h5>
+                            <p>/utente/mese</p>
                         </div>
                         <div class="plan-offers">
                             <ul>
                                 <li>
-                                    <i class="fa-solid fa-user"></i>
-                                    <span>1 utente</span>
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>3 o più utenti</span>
                                 </li>
                                 <li>
                                     <i class="fa-solid fa-folder"></i>
-                                    <span>5 TB di spazio di archiviazione sicuro</span>
+                                    <span>Tutto lo spazio di cui hai bisogno</span>
                                 </li>
                                 <li>
                                     <i class="fa-solid fa-share"></i>
@@ -179,14 +188,14 @@
                 </div>
                 <div class="plan-card col-30">
                     <div class="plan-user">
-                        <i class="fa-solid fa-user"></i>
-                        <span>Singolo</span>
+                        <i class="fa-solid fa-hotel"></i>
+                        <span>Azienda</span>
                     </div>
                     <div class="card-body">
                         <div class="plan-price">
-                            <h3>Professional</h3>
-                            <h5>&euro; 12.00</h5>
-                            <p>/mese</p>
+                            <h3>Enterprise</h3>
+                            <h5>Contattaci</h5>
+                            <p>mensile</p>
                         </div>
                         <div class="plan-offers">
                             <ul>
@@ -227,7 +236,7 @@
                     </div>
 
                 </div>
-                <div class="plan-card">
+                <div class="plan-card row-card">
                     <div class="plan-user">
                         <i class="fa-solid fa-hotel"></i>
                         <span>Team</span>
@@ -251,16 +260,14 @@
     </section>
     <!-- section partner -->
     <section>
-        <div class="container-small">
-            <div class="partner-container">
-                <div class="col-60">
-                    <img src="img/partner.png" alt="">
-                </div>
-                <div class="col-40">
-                    <h3>Entra in contatto con un partner Dropbox</h3>
-                    <p>Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.</p>
-                    <button class="btn-white">Trova un partner</button>
-                </div>
+        <div class="container-small partner-container">
+            <div class="col-70">
+                <img src="img/partner.png" alt="">
+            </div>
+            <div class="col-30">
+                <h3>Entra in contatto con un partner Dropbox</h3>
+                <p>Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.</p>
+                <button class="btn-white">Trova un partner</button>
             </div>
         </div>
     </section>
@@ -302,71 +309,90 @@
             </div>
         </div>
     </section>
-    <!-- section drop business -->
-    <section>
-        <div class="container-small business-container">
-            <div class="col-70">
-                <h2>Più di 500.000 team utilizzano Dropbox Business</h2>
-                <span><a href="#">Scopri di piu sui nostri clienti</a></span>
-            </div>
-            <div class="col-30"></div>
-        </div>
-    </section>
-    <!-- section companies -->
-    <section class="companies-container">
-        <div class="col-30">
-            <div class="company col-50">
-                <img src="img/designit.svg" alt="company">
-            </div>
-            <div class="company col-50">
-                <img src="img/arizona_state_university.svg" alt="company">
-            </div>
-            <div class="company col-50">
-                <img src="img/university_of_florida.svg" alt="company">
-            </div>
-            <div class="company col-50">
-                <img src="img/topps.svg" alt="company">
-            </div>
-        </div>
-        <div class="col-30">
-            <img src="img/designit.svg" alt="">
-            <div class="divider"></div>
-            <p>"I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper”</p>
-            <p>Morten Thomsen, Global IT Lead</p>
-        </div>
-        <div class="col-30">
-            <div class="company col-50">
-                <img src="img/world_bicycle_relief.svg" alt="company">
-            </div>
-            <div class="company col-50">
-                <img src="img/hearst_corp.svg" alt="company">
-            </div>
-            <div class="company col-50">
-                <img src="img/lonely_planet.svg" alt="company">
-            </div>
-            <div class="company col-50">
-                <img src="img/clear_channel.svg" alt="company">
-            </div>
-        </div>
-    </section>
-    <!-- section trial -->
+    <!-- section business -->
     <section>
         <div class="container-small business-container">
             <div class="col-60">
-                <h2>Porta Dropbox Business nella tua azienda</h2>
+                <h2>Più di 500.000 team utilizzano Dropbox Business</h2>
+                <span><a href="#">Scopri di piu sui nostri clienti</a></span>
             </div>
-            <div class="col-40">
-                <button class="btn-white">Inizia la tua prova gratuita</button>
+            <div class="col-40"></div>
+        </div>
+    </section>
+    <!-- section companies -->
+    <section>
+        <div class="companies-container">
+            <div class="col-30">
+                <div class="company col-50"
+                style="background-color: #A2D39B; border: 10px solid #D2E9CD;">
+                    <img src="img/designit.svg" alt="company">
+                </div>
+                <div class="company col-50" style="background-color: #61082B;">
+                    <img src="img/arizona_state_university.svg" alt="company">
+                </div>
+                <div class="company col-50" style="background-color: #0293CE;">
+                    <img src="img/university_of_florida.svg" alt="company">
+                </div>
+                <div class="company col-50" style="background-color: #FF1C1C;">
+                    <img src="img/topps.svg" alt="company">
+                </div>
+            </div>
+            <div class="col-30 main-sponsor">
+                <img class="col-50" src="img/designit.svg" alt="">
+                <div class="main-sponsor-description">
+                    <div class="divider"></div>
+                    <p>"I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper”</p>
+                    <p>Morten Thomsen, Global IT Lead</p>
+                </div>
+            </div>
+            <div class="col-30">
+                <div class="company col-50" style="background-color: #D5011F;">
+                    <img src="img/world_bicycle_relief.svg" alt="company">
+                </div>
+                <div class="company col-50" style="background-color: #B4D1E7;">
+                    <img src="img/hearst_corp.svg" alt="company">
+                </div>
+                <div class="company col-50" style="background-color: #0E2481;">
+                    <img src="img/lonely_planet.svg" alt="company">
+                </div>
+                <div class="company col-50" style="background-color: #FFD830;">
+                    <img src="img/clear_channel.svg" alt="company">
+                </div>
+            </div>
+        </div>
+        <div class="business-trial-container">
+            <div class="container-small">
+                <div class="col-70">
+                    <h2>Porta Dropbox Business nella tua azienda.</h2>
+                </div>
+                <div class="col-30">
+                    <button class="btn-white">Inizia la tua prova gratuita</button>
+                </div>
             </div>
         </div>
     </section>
     <!-- section q&a -->
-    <section class="qea">
-        <div class="container-small">
+    <section>
+        <div class="container-small qea-container">
             <h2>Domande frequenti</h2>
-            <h4>Qual è la differenza tra Dropbox Standard e Dropbox Business Advanced?</h4>
-            <h4>Qual è la differenza tra Dropbox Standard e Dropbox Business Advanced?</h4>
-            <h4>Qual è la differenza tra Dropbox Standard e Dropbox Business Advanced?</h4>
+            <div class="question-container">
+                <h4>Qual è la differenza tra Dropbox Standard e Dropbox Business Advanced?</h4>
+                <span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </div>
+            <div class="question-container">
+                <h4>Qual è la differenza tra Dropbox Standard e Dropbox Business Advanced?</h4>
+                <span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </div>
+            <div class="question-container">
+                <h4>Qual è la differenza tra Dropbox Standard e Dropbox Business Advanced?</h4>
+                <span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </div>
         </div>
     </section>
     <!-- footer -->
@@ -427,10 +453,11 @@
                 </div>
             </div>
             <div class="lang">
-                <div class="divider"></div>
-                <i class="fa-solid fa-earth"></i>
-                <span>Italiano</span>
-                <span>&blacktriangle;</span>
+                <a href="#">
+                    <span><i class="fa-solid fa-earth"></i></span>
+                    <span>Italiano</span>
+                    <span><i class="fa-solid fa-caret-up"></i></span>
+                </a>
             </div>
         </div>
     </footer>
