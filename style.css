@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 ul {
@@ -61,6 +61,26 @@ button {
 
 section {
     padding-bottom: 100px;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-60 {
+    width: 60%;
+}
+
+.col-70 {
+    width: 70%;
 }
 
 .container-small,
@@ -179,27 +199,18 @@ header button {
     flex-grow: 1;
 }
 
+.jumbo-text-down i {
+    transition: scale .2s, translate .2s linear;
+    color: #444444;
+}
+
+.jumbo-text-down i:hover {
+    scale: 1.2;
+    color: #0261FF;
+    translate: 0 10px;
+}
+
 /* plan div */
-
-.col-30 {
-    width: 30%;
-}
-
-.col-40 {
-    width: 40%;
-}
-
-.col-50 {
-    width: 50%;
-}
-
-.col-60 {
-    width: 60%;
-}
-
-.col-70 {
-    width: 70%;
-}
 
 .plans-container {
     display: flex;
