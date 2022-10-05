@@ -220,8 +220,18 @@ header button {
     top: 50px;
 }
 
+.text-jumbo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .img-jumbo {
     flex-grow: 1;
+}
+
+.jumbo-text-down {
+    padding-bottom: 50px;
 }
 
 .jumbo-text-down i {
@@ -335,7 +345,7 @@ header button {
 }
 
 .partner-container button {
-    border: 1px solid black;
+    border: 1px solid #808080;
 
     margin-top: var(--spacing-20);
 }
@@ -432,19 +442,42 @@ header button {
 
 .question-container {
     border-bottom: 1px solid #d3d3d3;
+    padding: 0 20px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+
+    transition: display 1s;
 }
 
 .question-container span {
     font-size: .9rem;
     padding: var(--spacing-20);
+
+    transition: rotate 0.5s;
+}
+
+.question-container:hover {
+    background-color: #e0e0e0;
+}
+
+.question-container:focus span {
+    rotate: 180deg;
+}
+
+.question-container:focus .question {
+    display: inline-block;
 }
 
 .qea-container div:first-of-type {
     border-top: 1px solid #d3d3d3;
+}
+
+.question {
+    padding: 20px 0;
+    display: none;
 }
 
 /* footer  */
@@ -458,6 +491,10 @@ footer a {
     text-decoration: none;
     font-size: 13px;
     color: #d3d3d3;
+}
+
+footer a:hover {
+    opacity: 0.8;
 }
 
 .footer-links-container {
@@ -484,6 +521,8 @@ footer .divider {
     gap: 10px;
 }
 
+/* effects */
+
 .dropdown {
     position: absolute;
     top: 50px;
@@ -493,10 +532,9 @@ footer .divider {
     visibility: hidden;
     opacity: 0;
 
-    transition: opacity .3s linear;
+    transition: opacity .2s linear;
 
     display: flex;
-    justify-content: space-around;
 }
 
 .nav-left ul li:hover .dropdown{
@@ -507,8 +545,39 @@ footer .divider {
 .dropdown-link {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .dropdown-link li {
     padding: 5px 0;
+    width: 100%;
+}
+
+.dropdown-link li:hover {
+    background-color: #d3d3d3;
+}
+
+.my-radio input {
+    display: none;
+}
+
+.my-radio .radio-circle {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #0261FF;
+    border-radius: 50%;
+}
+
+.my-radio input:checked + span {
+    background-color: #0261FF;
+}
+
+.languages {
+    display: none;
+}
+
+.lang a:hover .languages {
+    display: inline-block;
 }
