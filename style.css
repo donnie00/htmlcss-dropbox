@@ -106,6 +106,11 @@ section {
     color: white;
 }
 
+.btn-blue:hover,
+.btn-white:hover {
+    opacity: 0.7;
+}
+
 .btn-white {
     background-color: white;
     color: grey;
@@ -140,6 +145,12 @@ nav {
 
 nav img {
     width: 100px;
+
+    transition: scale 0.2s;
+}
+
+.nav-left a:hover img {
+    scale: 1.1;
 }
 
 nav ul {
@@ -150,6 +161,8 @@ nav ul {
 nav ul li {
     display: flex;
     height: 100%;
+
+    transition: background-color 0.2s linear;
 }
 
 nav a {
@@ -164,6 +177,18 @@ nav a {
 
 nav button {
     align-self: center;
+}
+
+nav li:hover {
+    background-color: #e0e0e0;
+}
+
+.nav-left ul li {
+
+}
+
+.nav-left ul li {
+    position: relative;
 }
 
 /* header */
@@ -204,13 +229,17 @@ header button {
     color: #444444;
 }
 
-.jumbo-text-down i:hover {
+.jumbo-text-down a:hover i{
     scale: 1.2;
     color: #0261FF;
     translate: 0 10px;
 }
 
 /* plan div */
+
+#find-your-plan {
+    padding-top: var(--spacing-20);
+}
 
 .plans-container {
     display: flex;
@@ -349,10 +378,12 @@ header button {
 }
 
 .companies-container .main-sponsor {
-    padding: 35px;
+    padding: 3vw;
 
     background-color: #F5F5F5;
     align-items: stretch;
+
+    overflow: auto;
 }
 
 .main-sponsor-description > p {
@@ -368,7 +399,7 @@ header button {
     align-items: center;
     justify-content: center;
 
-    padding: var(--spacing-50);
+    padding: 3vw;
 
     aspect-ratio: 1/1;
 }
@@ -451,4 +482,33 @@ footer .divider {
 
     display: inline-flex;
     gap: 10px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 50px;
+    width: 200%;
+    background-color: #e0e0e0;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity .3s linear;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-left ul li:hover .dropdown{
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-link li {
+    padding: 5px 0;
 }
